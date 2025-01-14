@@ -1,0 +1,186 @@
+/* main主体模块 */
+/* #region */
+.main {
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+.focus {
+    float: left;
+    width: 721px;
+    height: 455px;
+}
+.newsflash {
+    float: right;
+    width: 250px;
+    height: 455px;
+}
+.news {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+.news-hd {
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 1px dotted #e4e4e4;
+    padding: 0 15px;
+}
+.news-hd h5 {
+    float: left;
+    font-size: 14px;
+}
+.news-hd .more {
+    float: right;
+}
+.news-hd .more::after {
+    font-family: 'icomoon';
+    content: '\e920';
+}
+.news-bd {
+    padding: 5px 15px 0;
+}
+.news-bd ul li {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.lifeservice {
+    overflow: hidden;
+    height: 207px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+}
+.lifeservice ul {
+    width: 250px;
+}
+.lifeservice ul li {
+    float: left;
+    width: 61px;
+    height: 69px;
+    text-align: center;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+.lifeservice ul li:nth-child(4n) {
+    border-right: 0;
+}
+.lifeservice ul li i {
+    display: inline-block;
+    width: 24px;
+    height: 27px;
+    margin-top: 10px;
+    background: url(../images/icons.png) no-repeat -19px -15px;
+}
+.bargain {
+    margin-top: 5px;
+}
+/* #endregion */
+
+/* 推荐模块 */
+/* #region */
+.recom {
+    height: 163px;
+    background-color: #ebebeb;
+    margin-top: 12px;
+    /* border: 1px solid #ee0a0a; */
+}
+.recom_hd {
+    float: left;
+    height: 133px;
+    width: 205px;
+    background-color: #5c5251;
+    text-align: center;
+    padding-top: 30px;
+    /* border: 1px solid #ee0a0a; */
+}
+.recom_bd {
+    float: left;
+}
+.recom_bd ul li {
+    position: relative;
+    float: left;
+}
+.recom_bd ul li:nth-child(-n+3)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 1px;
+    height: 143px;
+    background-color: #ddd;
+}
+/* #endregion */
+
+/* 楼层模块 */
+/* #region */
+.floor .w{
+    margin-top: 30px;
+}
+.jiadian {
+    border-bottom: 1px solid #ccc;
+}
+.box_hd {
+    height: 30px;
+    /* background-color: gray; */
+    border-bottom: 2px solid #c81623;
+}
+.box_hd h3 {
+    float: left;
+    font-size: 18px;
+    font-weight: 400;
+    color: #c81623;
+}
+.tab_list {
+    float: right;
+    line-height: 30px;
+}
+.tab_list ul li {
+    float: left;
+    /* border: 1px solid #eb0909; */
+}
+.tab_list ul li a {
+    margin: 0 15px;
+}
+.box_bd {
+    height: 360px;
+}
+.tab_list_item>div {
+/* 匹配所有直接位于"tab_list_item"类内的<div>元素。 */
+/* 这个选择器只匹配直接子元素。
+如果<div>元素有其他嵌套的<div>元素，
+这些嵌套的<div>元素不会被选中。 */
+    float: left;
+    height: 361px;
+}
+.col_210 {
+    width: 209px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.col_210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    /* background-color: gray; */
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 33px;
+    margin-left: 14px;
+}
+.col_221 {
+    /* width: 221px; */
+    border-right: 1px solid #ccc;
+    /* border-bottom: 1px solid #f30909; */
+}
+.bb {
+    /* 一般情况下，a如果包含有宽度的盒子，a需要转为块级元素 */
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+.col_219 {
+    border-right: 1px solid #ccc;
+}
+/* #endregion */
