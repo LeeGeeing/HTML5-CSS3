@@ -1,290 +1,319 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>扩展作业-品优购手机详情页</title>
-    <meta name="description"
-        content="品优购JD.COM-专业的综合网上购物商城,销售家电、数码通讯、电脑、家居百货、服装服饰、母婴、图书、食品等数万个品牌优质商品.便捷、诚信的服务，为您提供愉悦的网上购物体验!" />
-    <meta name="Keywords" content="网上购物,网上商城,手机,笔记本,电脑,MP3,CD,VCD,DV,相机,数码,配件,手表,存储卡,品优购" />
-    <!-- 引入facicon.ico网页图标 -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <!-- 引入css 初始化的css 文件 -->
-    <link rel="stylesheet" href="css/base.css">
-    <!-- 引入公共样式的css 文件 -->
-    <link rel="stylesheet" href="css/common.css">
-    <!-- 引入详情页面的css文件 -->
-    <link rel="stylesheet" href="css/detail.css">
-</head>
-<body>
-    <!-- 快捷导航模块 start -->
-    <section class="shortcut">
-        <div class="w">
-            <div class="fl">
-                <ul>
-                    <li>品优购欢迎您！&nbsp;</li>
-                    <li>
-                        <a href="#">请登录</a>&nbsp;
-                        <a href="#" class="style_red">免费注册</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="fr">
-                <ul>
-                    <li>我的订单</li>
-                    <li></li>
-                    <li class="arrow-icon">我的品优购</li>
-                    <li></li>
-                    <li>品优购会员</li>
-                    <li></li>
-                    <li>企业采购</li>
-                    <li></li>
-                    <li class="arrow-icon">关注品优购</li>
-                    <li></li>
-                    <li class="arrow-icon">客户服务</li>
-                    <li></li>
-                    <li class="arrow-icon">网站导航</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <!-- 快捷导航模块 end -->
+/* 扩展作业-品优购手机详情页的样式文件 */
+.de_container {
+    margin-top: 20px;
+}
+/* 面包屑导航 */
+/* #region */
+.crumb_wrap {
+    height: 25px;
+}
+.crumb_wrap a {
+    margin: 0 10px;
+}
+/* #endregion */
 
-    <!-- header头部模块制作 start -->
-    <header class="header w">
-        <!-- logo模块 -->
-        <div class="logo fl">
-            <h1>
-                <a href="index.html" title="品优购商城">品优购商城</a>
-            </h1>
-        </div>
-        <!-- search模块 -->
-        <div class="search">
-            <input type="search" name="" id="" placeholder="语言开发">
-            <button>搜索</button>
-        </div>
-        <!-- hotwords模块 -->
-        <div class="hotwords">
-            <a href="#" class="style_red">优惠购首发</a>
-            <a href="#">亿元优惠</a>
-            <a href="#">9.9元团购</a>
-            <a href="#">美满99减30</a>
-            <a href="#">办公用品</a>
-            <a href="#">电脑</a>
-            <a href="#">通信</a>
-        </div>
-        <!-- 购物车模块 -->
-        <div class="shopcar fr">
-            我的购物车
-            <i class="count">8</i>
-        </div>
-    </header>
-    <!-- header头部模块制作 end -->
-    
-    <!-- nav导航模块制作 start -->
-    <nav class="nav">
-        <div class="w">
-            <div class="dropdown" style="overflow: hidden;">
-                <div class="dt">全部商品分类</div>
-                <div class="dd">
-                    <ul>
-                        <li><a href="#">家用电器</a></li>
-                        <li><a href="#">手机、数码、通信</a></li>
-                        <li><a href="#">电脑、办公</a></li>
-                        <li><a href="#">家居、家具、家装、厨具</a></li>
-                        <li><a href="#">男装、女装、童装、内衣</a></li>
-                        <li><a href="#">个户化妆、清洁用品、宠物</a></li>
-                        <li><a href="#">鞋靴、箱包、珠宝、奢侈品</a></li>
-                        <li><a href="#">运动户外、钟表</a></li>
-                        <li><a href="#">汽车、汽车用品</a></li>
-                        <li><a href="#">母婴、玩具乐器</a></li>
-                        <li><a href="#">食品、酒类、生鲜、特产</a></li>
-                        <li><a href="#">医药保健</a></li>
-                        <li><a href="#">图书、音像、电子书</a></li>
-                        <li><a href="#">彩票、旅行、充值、票务</a></li>
-                        <li><a href="#">理财、众筹、白条、保险</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="navitems">
-                <ul>
-                    <li><a href="#">服装城</a></li>
-                    <li><a href="#">美妆馆</a></li>
-                    <li><a href="#">传智超市</a></li>
-                    <li><a href="#">全球购</a></li>
-                    <li><a href="#">闪购</a></li>
-                    <li><a href="#">团购</a></li>
-                    <li><a href="#">有趣</a></li>
-                    <li><a href="#">秒杀</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- nav导航模块制作 end -->
+/* 产品介绍模块 */
 
-    <!-- 扩展作业-品优购手机详情页 start -->
-     <div class="de_container w">
-        <!-- 面包屑导航 -->
-         <div class="crumb_wrap">
-            <a href="index.html">手机、数码、通信</a> > <a href="#">手机</a> > <a href="#">Apple苹果</a> > <a href="#">iphone 6S Plus</a>
-        </div>
-        <!-- 产品介绍模块 -->
-         <div class="product_intro clearfix">
-            <!-- 预览区域 -->
-            <div class="preview_wrap fl">
-                <div class="preview_img">
-                    <img src="upload/s3.png" alt="">
-                </div>
-                <div class="preview_list">
-                    <a href="#" class="arrow_prev"></a>
-                    <a href="#" class="arrow_next"></a>
-                    <ul class="list_item">
-                        <li class="current"><img src="upload/pre.jpg" alt=""></li>
-                        <li><img src="upload/pre.jpg" alt=""></li>
-                        <li><img src="upload/pre.jpg" alt=""></li>
-                        <li><img src="upload/pre.jpg" alt=""></li>
-                        <li><img src="upload/pre.jpg" alt=""></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- 产品详细信息 -->
-            <div class="itemInfo_wrap fr">
-                <div class="sku_name">
-                    Apple iPhone 6s (A1700) 64G 玫瑰金 移动联通电信4G手机
-                </div>
-                <div class="news">
-                    推荐选择下方[移动优惠购],手机套餐齐享，每月节省100元
-                </div>
-                <div class="summary">
-                    <dl class="summary_price">
-                        <dt>价格</dt>
-                        <dd>
-                            <i class="price">￥5299.00</i>
-                            <a href="#">降价通知</a>
-                            <div class="remark">累计评价99999</div>
-                        </dd>
-                    </dl>
-                    <dl class="summary_promotion">
-                        <dt>促销</dt>
-                        <dd>
-                            <em>加购价</em>满999.00另加20.00元，或满1999.00另加30.00元，或满2999.00另加40.00元，即可在购物车换购热销商品  详情 >>
-                        </dd>
-                    </dl>
-                </div>
-            </div>
-         </div>
-     </div>
-    <!-- 扩展作业-品优购手机详情页 end -->
-    
-    <!-- 底部模块制作 start -->
-    <footer class="footer">
-        <div class="w">
-            <div class="mod_service">
-                <ul>
-                    <li>
-                        <h5></h5>
-                        <div class="service_txt">
-                            <h4>正品保障</h4>
-                            <p>正品保障，提供发票</p>
-                        </div>
-                    </li>
-                    <li>
-                        <h5></h5>
-                        <div class="service_txt">
-                            <h4>正品保障</h4>
-                            <p>正品保障，提供发票</p>
-                        </div>
-                    </li>
-                    <li>
-                        <h5></h5>
-                        <div class="service_txt">
-                            <h4>正品保障</h4>
-                            <p>正品保障，提供发票</p>
-                        </div>
-                    </li>
-                    <li>
-                        <h5></h5>
-                        <div class="service_txt">
-                            <h4>正品保障</h4>
-                            <p>正品保障，提供发票</p>
-                        </div>
-                    </li>
-                    <li>
-                        <h5></h5>
-                        <div class="service_txt">
-                            <h4>正品保障</h4>
-                            <p>正品保障，提供发票</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="mod_help">
-                <dl>
-                    <dt>服务指南</dt>
-                    <dd><a href="#">购物流程</a></dd>
-                    <dd><a href="#">会员介绍</a></dd>
-                    <dd><a href="#">生活旅游/团购</a></dd>
-                    <dd><a href="#">常见问题</a></dd>
-                    <dd><a href="#">大家电</a></dd>
-                    <dd><a href="#">联系客服</a></dd>
-                </dl>
-                <dl>
-                    <dt>服务指南</dt>
-                    <dd><a href="#">购物流程</a></dd>
-                    <dd><a href="#">会员介绍</a></dd>
-                    <dd><a href="#">生活旅游/团购</a></dd>
-                    <dd><a href="#">常见问题</a></dd>
-                    <dd><a href="#">大家电</a></dd>
-                    <dd><a href="#">联系客服</a></dd>
-                </dl>
-                <dl>
-                    <dt>服务指南</dt>
-                    <dd><a href="#">购物流程</a></dd>
-                    <dd><a href="#">会员介绍</a></dd>
-                    <dd><a href="#">生活旅游/团购</a></dd>
-                    <dd><a href="#">常见问题</a></dd>
-                    <dd><a href="#">大家电</a></dd>
-                    <dd><a href="#">联系客服</a></dd>
-                </dl>
-                <dl>
-                    <dt>服务指南</dt>
-                    <dd><a href="#">购物流程</a></dd>
-                    <dd><a href="#">会员介绍</a></dd>
-                    <dd><a href="#">生活旅游/团购</a></dd>
-                    <dd><a href="#">常见问题</a></dd>
-                    <dd><a href="#">大家电</a></dd>
-                    <dd><a href="#">联系客服</a></dd>
-                </dl>
-                <dl>
-                    <dt>服务指南</dt>
-                    <dd><a href="#">购物流程</a></dd>
-                    <dd><a href="#">会员介绍</a></dd>
-                    <dd><a href="#">生活旅游/团购</a></dd>
-                    <dd><a href="#">常见问题</a></dd>
-                    <dd><a href="#">大家电</a></dd>
-                    <dd><a href="#">联系客服</a></dd>
-                </dl>
-                <dl>
-                    <dt>帮助中心</dt>
-                    <dd>
-                        <img src="images/wx_cz.jpg" alt="" style="width: 95px; height: 95px;">
-                        品优购客户端
-                        </img>
-                    </dd>
-                </dl>
-            </div>
-            <div class="mod_copyright">
-                <div class="links">
-                    <a href="#">关于我们</a> | <a href="#">联系我们</a> | 联系客服 | 商家入驻 | 营销中心 | 手机品优购 | 友情链接 | 销售联盟 | 品优购社区 | 品优购公益 |
-                    English Site | Contact U
-                </div>
-                <div class="copyright">
-                    地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100 邮箱: zhanghj+itcast.cn <br>
-                    京ICP备08001421号京公网安备110108007702
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- 底部模块制作 end -->
-</body>
-</html>
+/* 预览区域 */
+/* #region */
+.preview_wrap {
+    width: 400px;
+    height: 590px;
+    /* border: 1px solid #ccc; */
+}
+.preview_img {
+    height: 398px;
+    border: 1px solid #ccc;
+}
+.preview_list {
+    position: relative;
+    height: 60px;
+    margin-top: 60px;
+}
+.list_item {
+    width: 320px;
+    height: 60px;
+    margin: 0 auto;
+    /* border: 1px solid #ccc; */
+}
+.list_item li {
+    float: left;
+    width: 56px;
+    height: 56px;
+    border: 2px solid transparent;
+    margin: 0 1px;
+}
+.list_item li.current {
+    border: 2px solid #c81623;
+}
+.arrow_prev,
+.arrow_next {
+    position: absolute;
+    top: 15px;
+    width: 22px;
+    height: 32px;
+    /* border: 1px solid #ccc; */
+    background-color: purple;
+}
+.arrow_prev {
+    left: 0;
+    background: url(../images/arrow-prev.png) no-repeat;
+}
+.arrow_next {
+    right: 0;
+    background: url(../images/arrow-next.png) no-repeat;
+}
+/* #endregion */
+
+/* 产品详细信息 */
+/* #region */
+.itemInfo_wrap {
+    width: 710px;
+}
+.sku_name {
+    height: 30px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.news {
+    height: 32px;
+    color: #e12228;
+}
+
+.summary dl {
+    overflow: hidden;
+    /* border: 1px solid #ccc; */
+}
+
+.summary dt,
+.summary dd {
+    float: left;
+}
+
+.summary dt {
+    width: 60px;
+    padding-left: 10px;
+    line-height: 36px;
+}
+
+.summary_price,
+.summary_promotion {
+    position: relative;
+    padding: 10px 0;
+    background-color: #fee9eb;
+}
+
+.price {
+    font-size: 24px;
+    color: #e12228;
+}
+
+.summary_price a {
+    color: #c81623;
+}
+
+.remark {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    /* border: 1px solid #ccc; */
+}
+
+.summary_promotion {
+    padding-top: 0;
+}
+
+.summary_promotion dd {
+    width: 450px;
+    line-height: 36px;
+    /* border: 1px solid #ccc; */
+}
+
+.summary_promotion em {
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+    background-color: #c81623;
+    text-align: center;
+    line-height: 22px;
+    color: #fff;
+}
+.summary_support dd {
+    line-height: 36px;
+}
+.choose_color a {
+    display: inline-block;
+    width: 80px;
+    height: 41px;
+    background-color: #f7f7f7;
+    border: 1px solid #ededed;
+    text-align: center;
+    line-height: 41px;
+}
+.summary a.current {
+    border-color: #c81623;
+}
+.choose_version {
+    margin: 10px 0;
+}
+.choose_version a,
+.choose_type a {
+    display: inline-block;
+    height: 32px;
+    padding: 0 12px;
+    background-color: #f7f7f7;
+    border: 1px solid #ededed;
+    text-align: center;
+    line-height: 32px;
+}
+.choose_btns {
+    margin-top: 20px;
+}
+.choose_amount {
+    position: relative;
+    float: left;
+    width: 50px;
+    height: 46px;
+    /* background-color: pink; */
+}
+.choose_amount input {
+    width: 33px;
+    height: 44px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.add,
+.reduce {
+    position: absolute;
+    right: 0;
+    width: 15px;
+    height: 22px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    text-align: center;
+    line-height: 22px;
+}
+.add {
+    top: 0;
+}
+.reduce {
+    bottom: 0;
+    /*禁止鼠标样式*/
+    cursor: not-allowed;
+    /* pointer  小手  move  移动  */
+}
+.addcar {
+    float: left;
+    width: 142px;
+    height: 46px;
+    background-color: #c81623;
+    text-align: center;
+    line-height: 46px;
+    font-size: 18px;
+    color: #fff;
+    margin-left: 10px;
+    font-weight: 700;
+}
+/* #endregion */
+
+/* 产品细节模块 */
+/* #region */
+.product_detail {
+    margin-bottom: 50px;
+}
+.aside {
+    width: 208px;
+    border: 1px solid #ccc;
+}
+.tab_list {
+    overflow: hidden;
+    height: 34px;
+}
+/*把背景颜色 底边框都给 li*/
+.tab_list li {
+    float: left;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ccc;
+    height: 33px;
+    text-align: center;
+    line-height: 33px;
+}
+/*鼠标单击 li 变化样式   背景变白色 去掉下边框 文字变颜色*/
+.tab_list .current {
+    background-color: #fff;
+    border-bottom: 0;
+    color: red;
+}
+.first_tab {
+    width: 104px;
+}
+.second_tab {
+    width: 103px;
+    border-left: 1px solid #ccc;
+}
+.tab_con {
+    padding: 0 10px;
+}
+.tab_con li {
+    border-bottom: 1px solid #ccc;
+}
+.tab_con li:last-child {
+    border-bottom: 0;
+}
+.tab_con li h5 {
+    /*超出的文字省略号显示*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 400;
+}
+.aside_price {
+    font-weight: 700;
+    margin: 10px 0;
+}
+.as_addcar {
+    display: block;
+    width: 88px;
+    height: 26px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 26px;
+}
+.detail {
+    width: 978px;
+    /* border: 1px solid #db1212; */
+}
+.detail_tab_list {
+    height: 39px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+.detail_tab_list li {
+    float: left;
+    height: 39px;
+    line-height: 39px;
+    padding: 0 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.detail_tab_list .current {
+    background-color: #c81623;
+    color: #fff;
+}
+.item_info {
+    padding: 20px 0 0 20px;
+}
+.item_info li {
+    line-height: 22px;
+}
+.more {
+    float: right;
+    font-weight: 700;
+}
+.more::after {
+    content: '\e91e';
+    font-family: 'icomoon';
+}
+/* #endregion */
