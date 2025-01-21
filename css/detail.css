@@ -214,6 +214,10 @@
     margin-left: 10px;
     font-weight: 700;
 }
+.addcar:hover {
+    background-color: #c81623;
+    color: #fff;
+}
 /* #endregion */
 
 /* 产品细节模块 */
