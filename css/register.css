@@ -1,0 +1,154 @@
+/* 注册页面样式 */
+/* 头部 */
+/* #region */
+.w {
+    font-family: Arial, sans-serif;
+    width: 1200px;
+    margin: 0 auto;
+}
+header {
+    height: 82px;
+    border-bottom: 2px solid #c81523;
+}
+.logo {
+    padding-top: 16px;
+}
+/* #endregion */
+
+/* 注册容器样式 */
+.registerarea {
+    height: 520px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 35px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* nav部分 */
+/* #region */
+/* 标题样式 */
+.registerarea h3 {
+    height: 41px;
+    border-bottom: 1px solid #ccc;
+    background-color: #ececec;
+    line-height: 42px;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.login {
+    float: right;
+    font-size: 14px;
+}
+.login a {
+    color: #c81523;
+}
+/* #endregion */
+
+/* 注册表单样式 */
+/* #region */
+/* 表单样式 */
+.reg_form {
+    width: 600px;
+    margin: 50px auto 0;
+}
+.reg_form ul li {
+    margin-bottom: 20px;
+}
+.reg_form ul li label {
+    display: inline-block;
+    width: 88px;
+    text-align: right;
+}
+/* 输入框样式 */
+.reg_form ul li .inp {
+    width: 240px;
+    height: 36px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.reg_form ul li .inp:focus {
+    outline: none;
+}
+/* 提示信息样式 */
+.error {
+    color: #c81523;
+}
+.error_icon,
+.success_icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: url(../images/error.png) no-repeat;
+    margin-top: -2px;
+}
+.success {
+    color: green;
+}
+.success_icon {
+    background: url(../images/success.png) no-repeat;
+}
+.safe {
+    padding-left: 170px;
+}
+.safe em {
+    padding: 0 12px;
+    color: #fff;
+}
+.ruo {
+    background-color: #de1111;
+}
+.zhong {
+    background-color: #40b83f;
+}
+.qiang {
+    background-color: #f79100;
+}
+.agree {
+    padding-left: 95px;
+}
+.agree input {
+    vertical-align: middle;
+}
+
+.agree a {
+    color: #1ba1e6;
+}
+/* 提交按钮样式 */
+.btn {
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6700;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 30px 0 0 70px;
+}
+/* 提交按钮悬停样式 */
+.btn:hover {
+    background-color: #e55300;
+}
+/* #endregion */
+
+/* footer样式 */
+/* #region */
+.mod_copyright {
+    text-align: center;
+    padding-top: 20px;
+}
+.links {
+    margin-bottom: 15px;
+}
+
+.links a {
+    margin: 0 3px;
+}
+
+.copyright {
+    line-height: 20px;
+}
+/* #endregion */
